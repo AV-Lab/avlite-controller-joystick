@@ -1,0 +1,2 @@
+# AVLite core (install separately from the main repo)
+pygame>=2.5
