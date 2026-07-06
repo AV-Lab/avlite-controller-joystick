@@ -28,7 +28,7 @@ full stick authority at or below ``steer_full_gain_below`` m/s, reduced toward
 
 from pydantic import Field
 
-from avlite.c60_common.c68_settings_schema import SettingsSchema
+from avlite.c60_apps.c64_settings_schema import SettingsSchema
 
 
 class PluginSettingsSchema(SettingsSchema):
