@@ -1,11 +1,7 @@
 import logging
 from typing import Optional
 
-from avlite.c10_perception.c11_perception_model import EgoState
-from avlite.c20_planning.c21_planning_model import LocalPlan
-from avlite.c30_control.c31_control_model import ControlCommand
-from avlite.c30_control.c32_control_strategy import ControlStrategy
-from avlite.c50_common.c53_trajectory_tracker import TrajectoryTracker
+from avlite import ControlCommand, ControlStrategy, EgoState, LocalPlan, TrajectoryTracker
 from avlite.plugins.avlite_controller_joystick.settings import PluginSettings
 
 log = logging.getLogger(__name__)
