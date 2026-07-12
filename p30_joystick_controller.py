@@ -1,7 +1,15 @@
 import logging
 from typing import Optional
 
-from avlite import ControlCommand, ControlStrategy, EgoState, LocalPlan, TrajectoryTracker
+from avlite import (
+    ControlCommand,
+    ControlStrategy,
+    EgoState,
+    LocalPlan,
+    PerceptionModel,
+    SensorFrame,
+    TrajectoryTracker,
+)
 from avlite.plugins.avlite_controller_joystick.settings import PluginSettings
 
 log = logging.getLogger(__name__)
@@ -73,6 +81,8 @@ class JoystickController(ControlStrategy):
         ego: EgoState,
         plan: Optional[LocalPlan] = None,
         control_dt: float = None,
+        perception_model: Optional[PerceptionModel] = None,
+        sensors: Optional[SensorFrame] = None,
     ) -> ControlCommand:
         if self._joystick is None:
             if not self._warned_on_control:
