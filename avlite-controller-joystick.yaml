@@ -134,7 +134,7 @@ c40_execution:
   c40_async_combined_perception_planning: true
   c40_bridge: BasicSim
   c40_control_dt: 0.01
-  c40_controller: StanleyController
+  c40_controller: JoystickController
   c40_executer_type: AsyncThreadedExecuter
   c40_execution_tasks: []
   c40_global_planner: GlobalCenterlineRacePlanner
@@ -175,7 +175,7 @@ c40_execution:
   c46_npc_speed_factor: 0.8
 c69_apps:
   c60_ros_distro: latest
-  c60_selected_profile: profile
+  c60_selected_profile: avlite-controller-joystick
   c62_community_plugins:
     avlite-controller-joystick: avlite-community-plugins/avlite-controller-joystick
   c62_default_plugins:
